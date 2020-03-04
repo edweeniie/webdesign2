@@ -66,3 +66,19 @@ ul.nav-links a {
 	}
 	
 } /*media bracket*/
+
+
+@media (min-width:960px) {
+	
+	header {
+		width:960px;
+		margin: auto;
+	
+	}
+	
+	
+	
+	
+	
+	
+}/* end of large screen media */
