@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.grid-container {
+	display:grid;
+/*	grid-template-rows: [h-line-1] 50% [h-line-2] 50% [h-line-3]; these mean the same thing,, both 1fr are gonna make a whole, if 1fr and 2fr it would be 33 v 66*/
+	grid-template-rows: [h-line-1] 1fr [h-line-2] 1fr [h-line-3] 1fr [h-line-4] 1fr [h-line-5];
+	
+	grid-template-columns: [v-line-1] 1fr [v-line-2] 1fr [v-line-3];
+	
+	grid-gap: 15px;
+	height: 100vh;
+	;
+}
+
+.gd-3 {
+	grid-row: 2/4;
+}
+
+.gd-5 { 
+	grid-row: 3/ h-line-5;
+}
+ 
+
+@media(min-width:560px) { 
+.grid-container {
+	display:grid;
+/*	grid-template-rows: [h-line-1] 50% [h-line-2] 50% [h-line-3]; these mean the same thing,, both 1fr are gonna make a whole, if 1fr and 2fr it would be 33 v 66*/
+	grid-template-rows: [h-line-1] 1fr [h-line-2] 1fr [h-line-3] 1fr [h-line-4];
+	
+	grid-template-columns: [v-line-1] 100px [v-line-2] auto [v-line-3] 100px [v-line-4];
+	
+	grid-gap: 15px;
+	height: 400px;
+	width:500px;
+	margin: auto;
+}
+
+
+.gd-3 {
+	grid-column: v-line-3 / v-line-4;
+	grid-row: 1/ h-line-3;
+	
+}
+
+/*you can call names by saying their number or by the way u named them*/
+.gd-4, .gd-5 {
+	grid-row: h-line-2 / h-line-4;
+	
+}
+
+.gd-6 {
+	grid-row: h-line-3 / h-line-4;
+}
+
+	} 
+/*end of media */
+
+@media(min-width: 768px) {
+	.grid-container {
+		
+	width: 768px;
+	}
+	
+} /**end**/
+
+@media(min-width: 1200px) {
+	
+	.grid-container {
+		
+	width: 1120px;
+	}
+	
+	
+	
+} /**media**/
