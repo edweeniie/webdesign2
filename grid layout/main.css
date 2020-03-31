@@ -2,6 +2,40 @@
 /* CSS Document */
 
 
+#toggleassist,
+ul.nav-links {display:none;}
+
+#toggleassist:checked + ul.nav-links {
+    display: block;
+}
+
+.toggle-button {
+    width: 40px;
+	float: left;
+    margin: 15px;
+}
+ul.nav-links {
+		list-style: none;
+	padding-left:0px;
+}
+
+ul.nav-links li {
+	padding:5px;
+	margin-top:20px
+	
+}
+
+
+ul.nav-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#2D2E2A;
+	
+}
+
+
+
+
 .grid-container {
 	display:grid;
 /*	grid-template-rows: [h-line-1] 50% [h-line-2] 50% [h-line-3]; these mean the same thing,, both 1fr are gonna make a whole, if 1fr and 2fr it would be 33 v 66*/
@@ -11,7 +45,7 @@
 	
 	grid-gap: 15px;
 	height: 100vh;
-	;
+	margin-top:35px;
 }
 
 .gd-3 {
@@ -24,6 +58,24 @@
  
 
 @media(min-width:560px) { 
+	
+	.toggle-button {
+		display:none;
+	}
+	
+	ul.nav-links {
+		display:block;
+		float: left;
+		margin-top:35px;
+	}
+	
+	ul.nav-links li {
+		display:inline-block;
+		border-bottom:none;
+		
+	}
+	
+	
 .grid-container {
 	display:grid;
 /*	grid-template-rows: [h-line-1] 50% [h-line-2] 50% [h-line-3]; these mean the same thing,, both 1fr are gonna make a whole, if 1fr and 2fr it would be 33 v 66*/
@@ -57,19 +109,13 @@
 	} 
 /*end of media */
 
-@media(min-width: 768px) {
+@media(min-width: 960px) {
+	
+	header {
+		width:960px;}
 	.grid-container {
 		
-	width: 768px;
-	}
-	
-} /**end**/
-
-@media(min-width: 1200px) {
-	
-	.grid-container {
-		
-	width: 1120px;
+	width: 960px;
 	}
 	
 	
