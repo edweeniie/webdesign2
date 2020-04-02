@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@import "colors.css";
+/* CSS Document */
+
+body {
+	margin:0px;}
+
+.logo {
+	max-width: 90px;
+	margin:15px;
+	margin-left:205px;
+}
+
+#toggleassist,
+ul.nav-links {display:none;}
+
+#toggleassist:checked + ul.nav-links {
+    display: block;
+}
+
+.toggle-button {
+    width: 40px;
+	float: right;
+    margin: 15px;
+}
+
+ul.nav-links {
+	list-style: none;
+	padding-left:0px;
+	
+}
+
+ul.nav-links li {
+	padding:10px;
+	border-bottom:2px solid #FAE3C6;
+	
+}
+
+ul.nav-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#2D2E2A
+}
+
+/*homepage*/
+.featured, .nowhiring {
+	height:320px;
+	width:100%;
+	margin-bottom:50px;
+	
+}
+
+.bigcoffee {
+	height:160px;
+	width:30%;
+	margin: auto;
+	margin-bottom:25px;
+}
+
+
+.about {
+	height:200px;
+	width:70%;
+	margin:auto;
+	margin-bottom:50px;
+}
+
+.img1, .img2, .img3 {
+	height:160px;
+	width:30%;
+	margin:auto;
+	margin-bottom:25px;
+}
+
+.nowhiring {
+	margin-bottom:0px;
+}
+
+
+/*products page*/
+.beverages {
+	width:35%;
+	height:20px;
+	margin:auto;
+	text-align:center;
+	margin-top:50px;
+}
+
+
+.drink1, .drink2, .drink3 {
+	height:160px;
+	width:30%;
+	margin:auto;
+	margin-bottom:25px;
+	margin-top:25px;
+}
+
+.bread {
+	height:320px;
+	width:100%;
+}
+
+
+
+/*locations page*/
+
+.map {
+	height:500px;
+	width:100%;
+}
+
+.location1, .location2, .location3 {
+	height:160px;
+	width:30%;
+	margin:auto;
+	margin-bottom:25px;
+	margin-top:25px;
+}
+
+.hours {
+	height:160px;
+	width:50%;
+	margin:auto;
+}
+
+
+
+@media (min-width: 550px) {
+	
+	.logo {
+		max-width: 75px;
+		margin-left:15px}
+	
+	.toggle-button {
+		display:none;
+	}
+	
+	ul.nav-links {
+		display:block;
+		float: right;
+		margin-top:35px;
+	}
+	
+	ul.nav-links li {
+		display:inline-block;
+		border-bottom:none;
+		
+	}
+	
+	
+	ul.nav-links li a {font-family:}
+	ul.nav-links a:link {color:#3C1518;}
+	ul.nav-links a:visited {color:#3C1518;}
+	ul.nav-links a:hover {color:#D58936;}
+	ul.nav-links a:active {color:#D58936;}
+	
+} /*media bracket*/
+
+
+@media (min-width:960px) {
+	
+	header {
+		width:960px;
+		margin: auto;
+	
+	}
+	
+	
+	
+	
+	
+	
+}/* end of large screen media */
