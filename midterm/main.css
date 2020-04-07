@@ -154,18 +154,64 @@ ul.nav-links a {
 	ul.nav-links a:hover {color:#D58936;}
 	ul.nav-links a:active {color:#D58936;}
 	
+	
+/*	homepage*/
+	
+	.coffeeabout {margin:auto}
+	.bigcoffee {width:200px;float:left;margin-right:10px;height:200px;margin-left:20%;}
+	.about {width:250px;float:left;margin-bottom:20px;height:200px;}
+	
+	.images {margin:auto;width:550px}
+	.img1, .img2, .img3 {float:right;margin:auto;width:150px;margin-right:20px}
+	
+	.nowhiring {margin-top:500px}
+	
+/*	products*/
+	
+	.drink1, .drink2, .drink3 {float:left;margin-right:20px;width:200px;margin-top:50px}
+	.drink1 {margin-left:10%}
+	
+	.bread {margin-top:300px}
+	
+/*locations*/
+	
+	.location1, .location2, .location3 {float:left;margin-right:20px;width:200px;margin-top:50px}
+	.location1 {margin-left:10%}
+	
+	.hours {margin-top:300px}
+	
 } /*media bracket*/
 
 
-@media (min-width:960px) {
+@media (min-width:900px) {
 	
 	header {
-		width:960px;
+		width:900px;
 		margin: auto;
 	
 	}
 	
+/*	homepage*/
 	
+	.coffeeabout {margin:auto}
+	.bigcoffee {width:250px;float:left;margin-right:50px;height:250px;margin-left:25%;}
+	.about {width:400px;float:left;margin-bottom:20px;height:250px;}
+	
+		.images {margin:auto;width:900px;}
+		.img1, .img2, .img3 {float:right;margin:auto;width:200px;margin-right:25px;margin-top:50px}
+		.img1 {margin-right:10%}
+	
+	.nowhiring {margin-top:600px}
+	
+/*	products*/
+	
+	.drink1, .drink2, .drink3 {float:left;margin-right:25px;width:250px;}
+	.drink1 {margin-left:20%}
+	
+/*locations*/
+	
+	.location1, .location2, .location3 {float:left;margin-right:25px;width:250px;}
+	.location1 {margin-left:20%}
 	
 	
 	
