@@ -66,22 +66,30 @@ ul.nav-links a {
 	width:70%;
 	margin:auto;
 	margin-bottom:50px;
+	
 }
+h1 {font-family: 'Girassol', cursive;color:#A44200}
+h2 {font-family: 'Girassol', cursive;color:white;font-size:24pt;}
+h3 {font-family: 'Quicksand', sans-serif;font-weight:lighter;font-size:12pt}
+h4 {font-family: 'Quicksand', sans-serif;text-align: center;font-size:15pt;color:#3C1518}
+h5 {font-family: 'Girassol', cursive;color:#69140E;font-size:40px}
 
 .img1, .img2, .img3 {
 	height:160px;
-	width:30%;
 	margin:auto;
 	margin-bottom:25px;
 }
 
-.img1 {background-image;background-position: ;background-size:}
-.img2 {background-image;background-position: ;background-size:}
-.img3 {background-image;background-position: ;background-size:}
+.img1 {background-image: url("images/shop1.jpeg");background-position:center ;background-size:cover}
+.img2 {background-image: url("images/inside.jpeg");background-position:center ;background-size:cover}
+.img3 {background-image: url("images/shop2.jpeg");background-position:center ;background-size:cover}
 
 .nowhiring {
 	margin-bottom:0px;
 	background-image: url("images/nowhiring.png");background-size:cover;background-position:center;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -97,20 +105,27 @@ ul.nav-links a {
 
 .drink1, .drink2, .drink3 {
 	height:160px;
-	width:30%;
+	width:40%;
 	margin:auto;
 	margin-bottom:25px;
-	margin-top:25px;
+	margin-top:70px;
+	
 }
 
-.drink1 {background-image: url("images/hotdrinks.png");background-size:cover; background-position:center;}
-.drink3 {background-image: url("images/noncaffinated.png");background-size:cover; background-position:center;}
-.drink2 {background-image: url("images/cold drinks.png");background-size:cover; background-position:center;}
+.hot {margin-top:-50px;}
+.cold {margin-top:2%}
+.decaf {margin-top:0.002%;}
 
 .bread {
 	height:320px;
 	width:100%;
 	background-image: url("images/pandulce.jpg");background-size:cover;
+	margin-top:30%;
+	
+}
+
+.breadtext {
+	text-align: center;
 }
 
 
@@ -121,20 +136,27 @@ ul.nav-links a {
 	height:500px;
 	width:100%;
 	background-image: url("images/map.png"); background-size:cover;
+	margin-bottom:20%;
 }
 
 .location1, .location2, .location3 {
 	height:160px;
-	width:30%;
 	margin:auto;
+	width:100%;
 	margin-bottom:25px;
 	margin-top:25px;
 }
+.l1, .l2, .l3 {margin-left:30%}
+
+.address {text-align: center}
+h6 {font-family:'Quicksand', sans-serif;font-size:10pt;}
+h7 {font-family:'Quicksand', sans-serif;font-weight: lighter;}
 
 .hours {
 	height:160px;
 	width:50%;
 	margin:auto;
+	margin-top:20%;
 }
 
 
@@ -173,26 +195,59 @@ ul.nav-links a {
 	
 	.coffeeabout {margin:auto}
 	.bigcoffee {width:200px;float:left;margin-right:10px;height:200px;margin-left:20%;}
-	.about {width:250px;float:left;margin-bottom:20px;height:200px;}
+	.about {width:250px;float:left;margin-bottom:200px;height:200px;}
 	
 	.images {margin:auto;width:550px}
 	.img1, .img2, .img3 {float:right;margin:auto;width:150px;margin-right:20px}
 	
-	.nowhiring {margin-top:500px}
+	.nowhiring {margin-top:700px}
 	
 /*	products*/
 	
-	.drink1, .drink2, .drink3 {float:left;margin-right:20px;width:200px;margin-top:50px}
+	.drink1, .drink2, .drink3 {float:left;margin-right:20px;width:200px;margin-top:50px;height:200px}
 	.drink1 {margin-left:10%}
 	
-	.bread {margin-top:300px}
+	.decaf {margin-top:-16px;}
+	
+	.bread {margin-top:400px}
 	
 /*locations*/
+	.map {margin-bottom:30px;}
+	.location1{margin-left:-100px}
 	
-	.location1, .location2, .location3 {float:left;margin-right:20px;width:200px;margin-top:50px}
-	.location1 {margin-left:10%}
+	.location1, .location2, .location3 {margin-right:2px;display: flex;justify-content: center}
 	
-	.hours {margin-top:300px}
+	
+.location1, .location2, .location3 {
+	position: relative;
+	width: 100%;
+}
+
+.l1, .l2, .l3  {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.location1:hover .l1 {opacity: 0.3;}
+.location1:hover .middle {opacity: 1;}
+	
+.location2:hover .l2 {opacity: 0.3;}
+.location2:hover .middle {opacity: 1;}
+	
+.location3:hover .l3 {opacity: 0.3;}
+.location3:hover .middle {opacity: 1;}
 	
 } /*media bracket*/
 
@@ -224,8 +279,8 @@ ul.nav-links a {
 	
 /*locations*/
 	
-	.location1, .location2, .location3 {float:left;margin-right:25px;width:250px;}
-	.location1 {margin-left:20%}
+	.location1, .location2, .location3 {display:flex;justify-content: center;margin-right:25px;width:1000px;}
+	.location1 {margin-left:20px}
 	
 	
 	
