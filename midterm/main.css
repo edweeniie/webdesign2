@@ -50,11 +50,14 @@ ul.nav-links a {
 	
 }
 
+.featured {background-image: url("images/coffeehands.jpg");background-size: cover;background-position: center;}
+
 .bigcoffee {
 	height:160px;
-	width:30%;
+	width:35%;
 	margin: auto;
 	margin-bottom:25px;
+	background-image: url("images/coffee.png"); background-size:cover;background-position: center;
 }
 
 
@@ -72,8 +75,13 @@ ul.nav-links a {
 	margin-bottom:25px;
 }
 
+.img1 {background-image;background-position: ;background-size:}
+.img2 {background-image;background-position: ;background-size:}
+.img3 {background-image;background-position: ;background-size:}
+
 .nowhiring {
 	margin-bottom:0px;
+	background-image: url("images/nowhiring.png");background-size:cover;background-position:center;
 }
 
 
@@ -95,9 +103,14 @@ ul.nav-links a {
 	margin-top:25px;
 }
 
+.drink1 {background-image: url("images/hotdrinks.png");background-size:cover; background-position:center;}
+.drink3 {background-image: url("images/noncaffinated.png");background-size:cover; background-position:center;}
+.drink2 {background-image: url("images/cold drinks.png");background-size:cover; background-position:center;}
+
 .bread {
 	height:320px;
 	width:100%;
+	background-image: url("images/pandulce.jpg");background-size:cover;
 }
 
 
@@ -107,6 +120,7 @@ ul.nav-links a {
 .map {
 	height:500px;
 	width:100%;
+	background-image: url("images/map.png"); background-size:cover;
 }
 
 .location1, .location2, .location3 {
