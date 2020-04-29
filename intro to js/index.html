@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<style>
+	#header1 {
+		color:black;
+	}	
+	.pane {
+		width:100%;
+		height: 200px;
+	}
+	#tealPane {
+		background-color: teal;
+	}
+</style>
+</head>
+
+<body>
+	<h1 id="header1">Intro to JS</h1>
+	
+	<section>
+		<div class="pane" id="tealPane"></div>
+		<button id="changeToRed">Change to Red</button>
+	
+	</section>
+	
+	<script>
+	//alert("Hello World");
+		var response = prompt("Whats your name?", "Larry Johnson")
+		var myHeader = document.getElementById("header1")
+		
+		var tealPane = document.getElementById("tealPane");
+		var redButton = document.getElementById("changeToRed");
+		
+		
+		myHeader.style.color = "red";
+		document.getElementById("header1").style.backgroundColor = "beige";
+		document.getElementById("header1").style.fontSize = "56px";
+		
+		document.getElementById("header1").innerText = "hello, " + response;
+		console.log("Hello" + 5 + "pickles");
+		
+		redButton.addEventListener("click", function(){
+			console.log("Click happened!");
+			tealPane.style.backgroundColor = "salmon";
+			var notification = document.createElement("h5");
+			notification.innerText = "This is red now!";
+			tealPane.appendChild(notification);
+		});
+		
+	</script>
+</body>
+</html>
