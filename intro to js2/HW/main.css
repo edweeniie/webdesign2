@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* CSS Document */
+nav {background-color:#FFFBD6;}
+body {
+	margin:0px;}
+
+.logo {
+	max-width: 50px;
+	margin:15px;
+	margin-left:20px;
+}
+
+#toggleassist,
+ul.nav-links {display:none;}
+
+#toggleassist:checked + ul.nav-links {
+    display: block;
+}
+
+.toggle-button {
+    width: 40px;
+	float: right;
+    margin: 15px;
+}
+
+ul.nav-links {
+	list-style: none;
+	padding-left:0px;
+	
+}
+
+ul.nav-links li {
+	padding:20px;
+	text-align: center;
+	
+}
+
+ul.nav-links a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#FFBD09;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"
+}
+
+
+.big img {
+	width:100%;
+}
+
+.thumbnails {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:500px;
+	margin-top: 100px;
+}
+.outfit {
+	position: relative;
+	width: 20%;
+	padding: 10px
+}
+
+.outfit img {
+  width: 100%;
+  height: auto;
+}
+
+.outfit .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:transparent;
+  color: white;
+  font-size: 16px;
+  padding: 50px 50px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.outfit .btn:hover {
+  background-color: white;
+	opacity: 50%;
+}
+	
+
+
+
+
+
+@media (min-width: 550px) {
+	
+	.logo {
+		max-width: 50px;
+		margin-left:50px}
+	
+	.toggle-button {
+		display:none;
+	}
+	
+	ul.nav-links {
+		display:block;
+		float: right;
+		margin-top:35px;
+		
+	}
+	
+	ul.nav-links li {
+		display:inline-block;
+		border-bottom:none;
+		
+	}
+	
+	
+	ul.nav-links li a {font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif"}
+	ul.nav-links a:link {color:#FFBD09;}
+	ul.nav-links a:visited {color:#FFBD09;}
+	ul.nav-links a:hover {color:yellowgreen;}
+	ul.nav-links a:active {color:yellowgreen;}
+	
+	
+	
+	.outfit{
+		width:150px;
+		padding:30px;
+	}
+	
+	.outfit .btn {
+		padding: 75px 75px;
+		
+	}
+	
+	.thumbnails {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:1250px;
+}
+
+	
+	.outfit .btn:hover {
+	opacity: 50%;
+}
+	
