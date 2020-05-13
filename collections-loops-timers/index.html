@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drop Downs + Loops</title>
+</head>
+
+<body>
+	
+	<header>
+	
+	
+		<form method="get" action="">
+			<label for="groupSelect">Group</label>
+			<select id="groupSelect">
+			<option value="animals">Cute Animals</option>
+			<option value="food">Yummy Food</option>
+			<option value="nature">Pretty Nature</option>
+				
+				
+			</select>
+			
+			<label for="catSelect">Category</label>
+			<select id="catSelect"></select>
+		</form>
+	</header>
+	<hr>
+	
+	<main id="gallery">
+		<img src="pear.png" alt="pear" id="galleryImg">
+		
+	</main>
+	
+	
+	
+	<script>
+		var groupSelect = document.getElementById("groupSelect");
+		var catSelect = document.getElementById("catSelect");
+		var galleryImg = document.getElementById("galleryImg")
+		
+		var catAnimals = ["Puppies", "Kittens", "Quokkas"];
+		var catFood = ["Coffee", "Dessert", "Cocktails", "Muffins", "Pineapples", "Chips"];
+		var catNature = ["Forest", "Beaches", "Mountains"];
+		
+		var imageCounter = 1;
+		
+		groupSelect.addEventListener("change", function() {
+			console.log(groupSelect.value);
+			
+			if (groupSelect.value == 'animals'){
+				fillCategory(catAnimals);
+			}
+			else if (groupSelect.value == 'food'){
+				fillCategory(catFood);
+			}
+			else if (groupSelect.value == 'nature'){
+				fillCategory(catNature);
+			}
+			else {
+				//for all other cases
+			}
+			
+		})
+
+		var fillCategory = function(catArray){
+			catSelect.innerHTML = "";
+			catArray.forEach(function(member){
+				var opt = document.createElement('option');
+				opt.value = member;
+				opt.textContent = member;
+				catSelect.appendChild(opt);
+			})
+		}						 
+									 
+		
+		var timerFunction = function(){
+			
+			
+			if(imageCounter == 1){
+				galleryImg.src = "peach.png";
+				imageCounter = 2;
+			}
+			else if(imageCounter == 2){
+				galleryImg.src = "cherries.png";
+				imageCounter = 3;
+			}
+			else if(imageCounter == 3){
+				galleryImg.src = "pear.png";
+				imageCounter = 2;
+			}
+			
+			
+			
+			//var newElem = document.createElement('p');
+			//newElem.textContent = "Another paragraph";
+			//document.getElementById('gallery').appendChild(newElem)
+		}
+		
+		window.setInterval(timerFunction, 3000);
+		
+	
+		
+		
+	</script>
+	
+</body>
+</html>
