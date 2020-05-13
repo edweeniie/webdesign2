@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  background-image: url("Peach-Pit.jpg");
+}
+
+header, nav {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	
+}
+header {
+	color:white;
+	font-size: 30pt;
+}
+nav{
+	
+	margin-bottom:400px;
+}
+nav a {
+  text-decoration: none;
+  background: #333;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 8px;
+}
+
+main {
+	height:1300px;
+}
+
+.text {
+	background:white;
+	margin-top:500px;
+	text-align: center;
+	margin-bottom: -30px;
+	padding-top:10px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+
+.albums{
+	width:1250px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	height:300px;
+
+}
+.albums img {
+	width:200px;
+	padding:30px;
+		
+}
+
+.center {
+  margin: 0 auto;
+  width: 200px;
+  background: black; opacity: 70%;
+  padding: 20px;
+  color: white;
+	margin-top:30px;
+}
+
+ footer {
+	position: relative;
+  background: white;
+  height: 200px;
+  width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+	resize: both;
+	overflow: auto;}
+
+footer div {
+  background:#034C8A;
+  color: white;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
