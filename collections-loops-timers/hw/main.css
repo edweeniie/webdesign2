@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	display: flex;
+	justify-content: center;
+	background-image: url("bg.jpg");
+	background-position: center;
+	
+	
+}
+

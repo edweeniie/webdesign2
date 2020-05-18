@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>loops, arrays, collections hw</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<header>
+	
+	<form method="get" action="">
+			<label for="groupSelect">Villagers</label>
+				<select id="groupSelect">
+					<option value="animals">Animals</option>
+					<option value="mayors">Mayors</option>
+		
+				</select>
+			<label for="catSelect">Category</label>
+			<select id="catSelect"></select>
+	</form>
+	</header>
+	
+	<main id="gallery">
+		<img src="blank.jpeg" alt="blank" id="galleryImg">
+		
+	</main>
+	
+	
+	
+	<script>
+		var groupSelect = document.getElementById("groupSelect");
+		var catSelect = document.getElementById("catSelect");
+		var galleryImg = document.getElementById("galleryImg")
+	
+		var catAnimals = ["Deer", "Goats", "Bunnies"];
+		var catMayors = ["Boy", "Girl"];
+		
+		var imageCounter = 1;
+		
+			groupSelect.addEventListener("change", function() {
+			console.log(groupSelect.value);
+			
+			if (groupSelect.value == 'animals'){
+				fillCategory(catAnimals);
+			}
+			else if (groupSelect.value == 'mayors'){
+				fillCategory(catMayors);
+			}
+			
+			else {
+				//for all other cases
+			}
+			
+		})
+		
+			catSelect.addEventListener("change", function(){
+				if (catSelect.value == 'deer'){
+					timerFunction
+				}
+				
+			})
+	
+			var fillCategory = function(catArray){
+			catSelect.innerHTML = "";
+			catArray.forEach(function(member){
+				var opt = document.createElement('option');
+				opt.value = member;
+				opt.textContent = member;
+				catSelect.appendChild(opt);
+			})
+		}		
+			
+			//deer
+			var timerFunction = function(){
+			
+			
+			if(imageCounter == 1){
+				galleryImg.src = "zell.png";
+				imageCounter = 2;
+			}
+			else if(imageCounter == 2){
+				galleryImg.src = "lopez.png";
+				imageCounter = 3;
+			}
+			else if(imageCounter == 3){
+				galleryImg.src = "beau.png";
+				imageCounter = 1;
+			}
+	
+			}
+	
+			//goats
+			var timerFunction = function(){
+			
+			
+			if(imageCounter == 1){
+				galleryImg.src = "sherb.png";
+				imageCounter = 2;
+			}
+			else if(imageCounter == 2){
+				galleryImg.src = "pashmina.png";
+				imageCounter = 3;
+			}
+			else if(imageCounter == 3){
+				galleryImg.src = "billy.png";
+				imageCounter = 1;
+			}
+	
+			}
+			
+			//bunnies
+				var timerFunction = function(){
+			
+			
+			if(imageCounter == 1){
+				galleryImg.src = "coco.png";
+				imageCounter = 2;
+			}
+			else if(imageCounter == 2){
+				galleryImg.src = "genji.png";
+				imageCounter = 3;
+			}
+			else if(imageCounter == 3){
+				galleryImg.src = "cole.png";
+				imageCounter = 1;
+			}
+	
+			}
+			
+			
+	window.setInterval(timerFunction, 3000);
+	
+	</script>
+	
+
+	
+</body>
+</html>
