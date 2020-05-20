@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Intro to jQuery</title>
+</head>
+
+<body>
+	
+	<main>
+	<div class="long-ps">
+	<p id= "someP"> lalallalalalala</p>	
+	<p class= "long-paragraph">oooooooooooooooooooooo</p>
+	</div>
+		
+		<div class="images">
+			<img src="shark.jpg" alt="great white shark" class="hideable-img">
+		</div>
+	
+		<button id="clickB">Click Me to add another</button>
+		<button id="clickR">Click Me to remove some</button>
+		
+		<button id="hideBtn">Click me to hide image</button>
+		<button id="toggleBtn">Click me to toggle images visability</button>
+		
+		<button id="fadeOutBtn">Click me to fade out</button>
+		<button id="fadeToggleBtn">Click me to fade out</button>
+		
+		<button id="slideUpBtn">Click me to slide up</button>
+		<button id="customBtn">Click me for a custom Animation</button>
+		
+		
+		
+	</main>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			//everything should go here
+		$("#clickB").click(function(){
+		$(".long-ps").append('<p class= "long-paragraph">oooooooooooooooooooooo</p>')
+			
+		});
+		
+		$("#clickR").click(function(){
+			$('.long-paragraph').remove();
+		})
+		
+		$('#hideBtn').click(function(){
+			$('.hideable-img').hide();
+		})
+		
+		$('#toggleBtn').click(function(){
+			$('.hideable-img').toggle();
+		})
+		
+		$('#fadeOutBtn').click(function(){
+			$('.hideable-img').fadeOut(4000, function(){
+				$(".images").append('<h1>Image Hidden Now!</h1>');
+			});
+		})
+		
+		$('#fadeToggleBtn').click(function(){
+			$('.hideable-img').fadeToggle();
+		})
+		
+		//.fadeOut("slow/fast/3000")
+		
+		$('#slideUpBtn').click(function(){
+			$('.hideable-img').slideUp(2000);
+		})
+		
+		$('#customBtn').click(function(){
+			$('.hideable-img').animate({height: "0px", width:"1080px", marginBottom: "667px"}, 2000);
+		})
+			
+			
+		}) //end of document ready
+		
+		
+		
+		
+	//var myP = document.getElementById("someP");
+	//var anotherP = document.getElementsByClassName('long-paragraph')[0];
+		
+		//document.getElementById("clickB").addEventListener("click", function(){
+			//do something
+		//})
+		
+	//var myP = $("#someP");
+	//var anotherP = $(".long-paragraph");
+		
+		//$("clickB").click(function(){
+			//do something
+		//})
+	
+	</script>
+</body>
+</html>
