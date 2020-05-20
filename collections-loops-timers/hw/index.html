@@ -24,6 +24,7 @@
 	
 	<main id="gallery">
 		<img src="blank.jpeg" alt="blank" id="galleryImg">
+		<img src="" id="roatingImg">
 		
 	</main>
 	
@@ -55,11 +56,18 @@
 			
 		})
 		
+		
 			catSelect.addEventListener("change", function(){
-				if (catSelect.value == 'deer'){
-					timerFunction
+				if (catSelect.value == 'Deer'){
+					imgSet = "deer";
 				}
-				
+				else if (catSelect.value == 'Goats'){
+					imgSet = "goat";
+				}
+				else if (catSelect.value == 'Bunnies'){
+					imgSet = "bunny";
+				}
+				//change image names to deer, deer2,deer3 etc//
 			})
 	
 			var fillCategory = function(catArray){
@@ -73,64 +81,84 @@
 		}		
 			
 			//deer
-			var timerFunction = function(){
+			var timerFunction1 = function(){
 			
 			
 			if(imageCounter == 1){
-				galleryImg.src = "zell.png";
+				galleryImg.src = "deer1.png";
 				imageCounter = 2;
 			}
 			else if(imageCounter == 2){
-				galleryImg.src = "lopez.png";
+				galleryImg.src = "deer2.png";
 				imageCounter = 3;
 			}
 			else if(imageCounter == 3){
-				galleryImg.src = "beau.png";
+				galleryImg.src = "deer3.png";
 				imageCounter = 1;
 			}
 	
 			}
 	
 			//goats
-			var timerFunction = function(){
+			var timerFunction2 = function(){
 			
 			
 			if(imageCounter == 1){
-				galleryImg.src = "sherb.png";
+				galleryImg.src = "goat1.png";
 				imageCounter = 2;
 			}
 			else if(imageCounter == 2){
-				galleryImg.src = "pashmina.png";
+				galleryImg.src = "goat2.png";
 				imageCounter = 3;
 			}
 			else if(imageCounter == 3){
-				galleryImg.src = "billy.png";
+				galleryImg.src = "goat3.png";
 				imageCounter = 1;
 			}
 	
 			}
 			
 			//bunnies
-				var timerFunction = function(){
+				var timerFunction3 = function(){
 			
 			
 			if(imageCounter == 1){
-				galleryImg.src = "coco.png";
+				galleryImg.src = "bunny1.png";
 				imageCounter = 2;
 			}
 			else if(imageCounter == 2){
-				galleryImg.src = "genji.png";
+				galleryImg.src = "bunny2.png";
 				imageCounter = 3;
 			}
 			else if(imageCounter == 3){
-				galleryImg.src = "cole.png";
+				galleryImg.src = "bunny3.png";
 				imageCounter = 1;
 			}
 	
 			}
 			
 			
-	window.setInterval(timerFunction, 3000);
+	window.setInterval(timerFunction1, 3000);
+		
+	var imgSet = "Deer";
+	var rotatingImg = document.getElementById("rotatingImg")
+	var rotateImgs = function(){
+		if (imageCounter == 1){
+			rotatingImg.src = "images/"+ imgSet + "1.png";
+			imageCounter = 2;
+		}
+		else if (imageCounter == 2){
+			rotatingImg.src = "images/"+ imgSet + "2.png";
+			imageCounter = 3;
+		}
+		else if (imageCounter == 3){
+			rotatingImg.src = "images/"+ imgSet + "3.png";
+			imageCounter = 1;
+		}
+		
+	}
+	
+	window.setInterval(rotateImgs, 3000);
 	
 	</script>
 	
