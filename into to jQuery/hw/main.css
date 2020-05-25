@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#fishing, #ocean {
+	width:100%;
+}
+
+#ocean{
+	margin-top:-20px;
+}
+
+header {
+	text-align: center;
+}
+header h1 {
+	font-family: 'Chelsea Market', cursive;
+	color:#1D2159
+}
+
+.ocean{
+	background-image: url("ocean.jpg");
+	height:2000px;
+	margin-top:-20px;
+}
+
+#clownfish{
+	width:500px;
+	margin-top: 300px;
+	margin-left: 600px;
+}
+
+#sunfish{
+	width:1200px;
+	margin-top:70px;
+	margin-left:300px;
+}
+
+#shark{
+	width:1000px;
+	margin-left: 200px;
+	margin-top:100px;
+}
+
+#barreleye{
+	width:450px;
+	
+	
+}
+
+/*clownfish button*/
+.container1 {
+  position: relative;
+  width: 50%;
+}
+.container1 img {
+  width: 100%;
+  height: auto;
+}
+.container1 .btn1 {
+  position: absolute;
+  top: 90%;
+  left: 135%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0EB0D9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container1 .btn1:hover {
+  background-color: black;
+}
+
+/*sunfish button*/
+.container2 {
+  position: relative;
+  width: 50%;
+}
+.container2 img {
+  width: 100%;
+  height: auto;
+}
+.container2 .btn2 {
+  position: absolute;
+  top: 52%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0EB0D9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container2 .btn2:hover {
+  background-color: black;
+}
+
+/*shark button*/
+.container3 {
+  position: relative;
+  width: 50%;
+}
+.container3 img {
+  width: 100%;
+  height: auto;
+}
+.container3 .btn3 {
+  position: absolute;
+  top: 80%;
+  left: 150%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0EB0D9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container3 .btn3:hover {
+  background-color: black;
+}
+
+/*barreleye button*/
+.container4 {
+  position: relative;
+  width: 50%;
+}
+.container4 img {
+  width: 100%;
+  height: auto;
+}
+
+.container4 .btn4 {
+  position: absolute;
+  top: 85%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #0EB0D9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container4 .btn4:hover {
+  background-color: black;
+}
+
+.showAll{
+	position: absolute;
+	top:100%;
+	left:80%;
+	  background-color: #0EB0D9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.showAll:hover {
+	background-color: black;
+}

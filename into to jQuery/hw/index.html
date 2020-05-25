@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>jquery hw</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+	<h1>Catch the Fish!</h1>
+	</header>
+	
+	<main>
+		<div>
+			<img src="fishingpic.jpg" id="fishing">
+			<button class="showAll" id="show">Release Fish!</button>
+		</div>
+		
+		<div class="ocean">
+				<div class="container1"><img src="Clown_Fish_NH.png" id="clownfish" class="clown">
+				<button class="btn1" id="clownfishbtn">Catch Clown Fish!</button></div>
+				<div class="container2"><img src="Ocean_Sunfish_NH.png" id="sunfish" class="sun">
+				<button class="btn2" id="sunfishbtn">Catch Sunfish!</button></div>
+				<div class="container3"><img src="great-white-shark.png" id="shark" class="greatwhite">
+				<button class="btn3" id="sharkbtn">Catch Shark!</button></div>
+				<div class="container4"><img src="Barreleye.png" id="barreleye" class="barrel">
+				<button class="btn4" id="barreleyebtn">Catch Barreleye Fish!</button></div>		
+		</div>
+		</main>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#show').click(function(){
+			$('.clown').css('visibility', 'visible');
+		})
+		
+		$('#clownfishbtn').click(function(){
+			$('.clown').animate({height:"0px", width:"1024px"},2000)
+		})
+		
+		$('#sunfishbtn').click(function(){
+			$('.sun').animate({height:"0px", width:"1024px"},2000)
+		})
+		
+		$('#sharkbtn').click(function(){
+			$('.greatwhite').animate({height:"0px", width:"1024px"},2000)
+		})
+		
+		$('#barreleyebtn').click(function(){
+			$('.barrel').animate({height:"0px", width:"1024px"},2000)
+		})
+		
+		
+		
+	})//end of ready function
+	</script>
+	
+	
+</body>
+</html>
