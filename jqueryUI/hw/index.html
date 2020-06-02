@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jqueryUiHomework</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="main.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+	 <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+	<script>
+  $( function() {
+    $( "#accordion" ).accordion({
+		heightStyle: "content"
+	});
+  } );
+  </script>
+	<script>
+  $( function() {
+    var availableTags = [
+      "Alligator",
+      "Anteater",
+      "Bear",
+      "Bird",
+      "Bull",
+      "Cat",
+      "Chicken",
+      "Cow",
+      "Cub",
+      "Deer",
+      "Dog",
+      "Duck",
+      "Eagle",
+      "Elephant",
+      "Frog",
+      "Goat",
+      "Gorilla",
+      "Hamster",
+      "Hippo",
+      "Horse",
+      "Kangaroo",
+      "Koala",
+	  "Lion",
+	  "Monkey",
+	  "Mouse",
+		"Octopus",
+		"Ostrich",
+		"Penguin",
+		"Pig",
+		"Rabbit",
+		"Rhino",
+		"Sheep",
+		"Squirrel",
+		"Tiger",
+		"Wolf",
+		
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+</head>
+
+<body>
+	
+	<div id="tabs">
+ 			 <ul>
+   				<li><a href="#tabs-1">Villagers</a></li>
+    			<li><a href="#tabs-2">Mayors</a></li>
+    			<li><a href="#tabs-3">Gameplay</a></li>
+  			</ul>
+		<div id="tabs-1">
+    		<p><h1>Every Animal Crossing: New Horizons Villager</h1>Animal Crossing: New Horizons features many returning villagers and a few new villagers that can move onto your island - either temporarily or to create a home to live in. There are also many returning characters that act as merchants or provide special features.The list below incorporates all known Villagers. They come from multiple types of personalities and different kinds of animals. Each island town can have up to 10 different kinds of villagers who will make their home there, and you will begin your deserted island adventure with two villagers - see the full list of possible starting villagers here.</p>
+				<div class="ui-widget">
+  					<label for="tags">Search for an Animal: </label>
+ 					 <input id="tags">
+				</div>
+				<img src="blank copy.jpeg">
+  		</div>
+		
+		<div id="tabs-2">
+    		<p><h1>Character Customization Available at the Start</h1>You can customize everything from the start of the game. Unlike previous Animal Crossing games, you get full control! Instead of answering a cryptic quiz you can customize your character as part of the check-in procedure. You'll be asked your name, birthday, and then have to take a passport picture.</p>
+				<div  class="ui-accordion">
+					<img src="AC_Character_Creation.jpg"></div>
+				<div id="accordion">
+					
+					<h3>Hairstyles</h3>
+  						<div>
+    						<p>
+   								 Animal Crossing: New Horizons on Switch has plenty of hair options for those who want to express themselves. With eight styles available in the beginning, and 16 more unlocking later on in the game, there’s a lot to choose from.
+   							 </p>
+							<img src="ACNH_default_hair.jpg">
+  						</div>
+  					<h3>Haircolor</h3>
+ 						 <div>
+   							 <p>
+    							When you first use the mirror to change your appearance, six more hairstyles will be made available. Other additional hairstyles unlock for 2,400 Nook Miles each, and eight additional hair colors cost 3,000 Nook Miles each.
+   							 </p>
+							 <img src="ACNH_default_hair_colors.jpg">
+							 <img src="ACNH_stylish_colors.jpg">
+  						</div>
+  					<h3>Clothing</h3>
+  						<div>
+    						<p>
+   								 In New Horizons, clothing items can be obtained from the Able Sisters, NHnookstop Nook Stop, and various events, as well as being crafted by the player using DIY Recipes. The player can also design their own clothing via the NookPhone.
+    						</p>
+							<img src="clothing.jpg">
+							<p>Clothing consists of 9 different categories:</p>
+    					<ul>
+      						<li>Tops</li>
+      						<li>Bottoms</li>
+     						<li>Dresses</li>
+							<li>Hats</li>
+							<li>Accessories</li>
+							<li>Socks</li>
+							<li>Shoes</li>
+							<li>Bags</li>
+							<li>Umbrellas</li>
+    					</ul>
+							
+  						</div>
+					
+				</div>
+  		</div>
+		
+		 <div id="tabs-3">
+   		 <p><h1>Animal Crossing: New Horizons Gameplay</h1>As in previous installments in the Animal Crossing series, Animal Crossing: New Horizons is a nonlinear life simulation game played in real-time. The player assumes the role of a customizable character who moves to a deserted island after purchasing a deserted island package from Tom Nook, a tanuki character who is a staple of the series. The game proceeds in an open-ended fashion as the player explores the island, and develops it into a community of anthropomorphic animals. Players can collect different items to use as decorations within the game. Like in the 2017 spin-off title Animal Crossing: Pocket Camp for mobile devices, the game introduces a crafting system that allows the player to convert materials into tools and furniture, which can be used to decorate the game's interior and exterior spaces.</p>
+   		 <p>The game allows the player to customize the appearance of their character at will, and does not lock specific hairstyles or facial features to specific genders. Players are additionally able to select their character's skin color, a feature introduced in the 2015 spin-off title Animal Crossing: Happy Home Designer. Nook Miles, an in-game currency earned by completing various tasks, can be used to purchase premium items. Players are able to invite animals to live on their island, and have the option to choose or influence where the animal constructs their home. The game's weather adjusts to the seasons of the Northern or Southern Hemisphere, depending on the player's real-world location, a first for the Animal Crossing series. Another first is the addition of windy weather, which is expressed in the movement of the leaves on the trees.</p>
+  </div>
+	</div>
+	
+</body>
+</html>
