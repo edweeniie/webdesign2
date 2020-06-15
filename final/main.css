@@ -114,12 +114,28 @@ header {
 .donate h2 {
 	font-family: 'Maven Pro', sans-serif;
 	color: aliceblue;
+	font-size: 300%;
+	padding:50px;
 }
 .donate h3 {
-		font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: aliceblue;
+	padding:50px;
+	margin-top:-130px;
 }
 
+.fakebtn {
+	width:150px;
+	height:50px;
+	background-color: aliceblue;
+	margin-left: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15%;
+	font-family: 'Maven Pro', sans-serif;
+	margin-top:180px;
+}
 .documentary {
 	background-image: url("images/mantaraysun.jpg");
 	height: 200px;
@@ -156,34 +172,125 @@ header {
 .about-header {
 	background-image:url("images/about-image.jpg");
 }
+.title {
+	font-family: 'Maven Pro', sans-serif;
+	color:#0899D4;
+	display: flex;
+	justify-content: center;
+}
+.CEO {
+	display: flex;
+	align-content: center;
+	padding: 30px;
+}
+.ceo {
+	border-radius: 50% 50%;
+	width:180px;
+	height: 180px;
+	margin-right:20px;
+}
+.ceo-bio {
+	font-family: 'Lato', sans-serif;
+}
 
 /*blog*/
 .blog-header {
 	background-image:url("images/blog-image.jpg");
 }
 
+
+
 /*donations*/
 .donations-header {
 	background-image:url("images/donations-image.jpg");
 }
 
+.donateheader h1 {
+	font-family: 'Maven Pro', sans-serif;
+	color:#0899D4;
+	display: flex;
+	justify-content: center;
+}
+
+.donateheader h3 {font-family: 'Lato', sans-serif; padding:30px;}
+.donate-info h2 {font-family: 'Maven Pro', sans-serif;color:#0899D4; padding:15px;}
+.donate-info h3 {
+	font-family: 'Lato', sans-serif;
+	padding: 30px;
+	margin-top:-60px;
+	color: #2E2F38;
+}
+.don-op {
+	border-radius: 10% 10% 0% 0%;
+}
+.donate-info {
+	background-color:#D6E5F0;
+	margin-top:-22px;
+	border-radius:  0% 0% 10% 10%;
+}
 .donate-square {
 	height:600px;
 	margin-top:-190px;
 	background-image: url("images/fishes.png");
+	
 	background-position: center;
 	background-size: cover;
 }
 
 .inside-donate {
 	height:400px;
-	width:400px;
+	width:450px;
 	display: block;
 	margin: auto;
 	margin-top:350px;
-	background-color: aqua;
+	background-color: #FFFFFF;
+	border-radius: 10%;
+	border: 1px solid #E5EEF6;
+	
+	
 }
 
+.btns {
+	display:flex;
+	justify-content: center;
+	
+}
+.fastbtn {
+	margin: 10px;
+	width:70px;
+	padding:7px;
+	background-color: #AFEBFF;
+	border: none;
+	border-radius: 5%;
+}
+
+.fastbtn:hover {
+	background-color: #40BCFF;
+	color: aliceblue;
+}
+
+.inside-donate h1 {
+	font-family: 'Maven Pro', sans-serif;
+	color:#0899D4;
+	display: flex;
+	justify-content: center;
+}
+.donationsform {
+	border:none;
+	margin: 0 auto;
+	
+	font-family: 'Lato', sans-serif;
+	display:flex;
+	text-align: center;
+	
+}
+
+.fillin {
+	display:block;
+	margin: 0 auto;
+	width:200px;
+	padding: 10px;
+	margin-bottom: 10px;
 
 /*footer*/
 footer {
@@ -236,6 +343,18 @@ footer {
 		font-size: 200%;
 	}
 	
+	
+	
+	/*blog*/
+	.row {
+	display:flex;
+}
+
+	.column {
+	flex: 50%;
+ 	padding: 10px;
+}
+
 	
 	@media (min-width:900px) {
 		ul.nav-links {
