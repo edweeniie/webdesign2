@@ -66,6 +66,42 @@ header {
 	font-size: 100%;
 	margin-top:130px;
 }
+/*footer*/
+.subscribe img {
+	width:70px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom:20px;
+}
+.enteremail {
+	border: none;
+}
+
+.sub {
+	background-color: aliceblue;
+	display: block;
+	margin: 0 auto;
+	border:none;
+	border-radius: 5%;
+	padding: 5px 10px;
+}
+
+.sub:hover {
+	background-color: #0899D4;
+}
+
+.medialogo {
+	width:70px;
+	padding:30px;
+}
+.social {
+	display: flex;
+	justify-content: center;
+	margin-top:70px;
+	
+}
+
+
 
 /*homescreen*/
 header {
@@ -78,6 +114,7 @@ header {
 	color:#0899D4;
 	display: flex;
 	justify-content: center;
+	margin-top:-50px;
 	
 	
 }
@@ -85,6 +122,8 @@ header {
 .info h3 {
 	font-family: 'Lato', sans-serif;
 	padding:0 50px;
+	font-weight: 100;
+	margin-bottom:30px;
 }
 .facts{
 	display: flex;
@@ -134,7 +173,7 @@ header {
 	align-items: center;
 	border-radius: 15%;
 	font-family: 'Maven Pro', sans-serif;
-	margin-top:180px;
+	margin-top:140px;
 }
 .documentary {
 	background-image: url("images/mantaraysun.jpg");
@@ -142,6 +181,8 @@ header {
 	background-position: center;
 	background-size: cover;
 }
+
+
 
 .visual-designs {
 	background-image: url("images/seaturtle.jpg");
@@ -155,18 +196,41 @@ header {
 	height: 200px;
 	background-position: center;
 	background-size: cover;
+	margin-bottom: 150px;
 }
 
 .ourwork h2 {
 	font-family: 'Maven Pro', sans-serif;
 	color:aliceblue;
+	padding-top:140px;
+	margin-left: 250px;
+	font-size: 200%;
+}
+
+.campaigns {
+	margin-bottom:800px;
 }
 .campaigns h1 {
 	font-family: 'Maven Pro', sans-serif;
 	color:#0899D4;
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	margin-bottom:50px;
 }
+
+.camp {
+	float:left;
+	width:250px;
+}
+.camp h2 {font-family: 'Lato', sans-serif;font-weight: 300;font-size: 130%}
+.camp h3 {font-family: 'Lato', sans-serif;font-weight: 100;font-size:100%}
+
+.campimg {
+	border-radius: 50%;
+	width:150px;
+}
+
 
 /*about*/
 .about-header {
@@ -193,12 +257,114 @@ header {
 	font-family: 'Lato', sans-serif;
 }
 
+.the-team h1 {
+	font-family: 'Maven Pro', sans-serif;
+	color:#0899D4;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom:50px;
+	margin-top:50px;
+}
+
+.teammem {
+	float:left;
+	width:250px;
+}
+.teammem h2 {font-family: 'Lato', sans-serif;font-weight: 300;font-size: 130%}
+.teammem h3 {font-family: 'Lato', sans-serif;font-weight: 100;font-size:100%}
+
+.member {
+	border-radius: 50%;
+	width:150px;
+}
+
+.workexamples h1 {
+	font-family: 'Maven Pro', sans-serif;
+	color:#0899D4;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top:1000px;
+	margin-bottom:50px;
+}
+.about-row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.about-column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+	
+}
+
+.about-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+
+}
 /*blog*/
 .blog-header {
 	background-image:url("images/blog-image.jpg");
 }
 
+.featured-blog h2 {
+	font-family: 'Maven Pro', sans-serif;
+	color:aliceblue;
+	margin-top:-115px;
+}
 
+.featured-blog {
+	padding: 40px;
+}
+
+.featured-blog h3 {
+	font-family: 'Lato', sans-serif;font-weight: 300; margin-top: 30px;
+}
+.featured-blog h4 {
+	font-family: 'Lato', sans-serif;font-weight: 300;color:#0899D4; margin-top:-10px;
+}
+
+.blog-title h1 {
+	font-family: 'Maven Pro', sans-serif;
+	color:#425070;
+	text-align: center;
+	margin-bottom:50px;
+}
+
+.hiddable {
+	display:none;
+}
+
+.small-blog {
+	padding: 0 50px;
+}
+.small-text h2 {font-family: 'Lato', sans-serif;font-weight: 300; color:#0899D4;margin-top: 30px;margin-left:-10px;}
+.small-text h3 { font-family: 'Lato', sans-serif;font-weight: 300; margin-top:-10px;}
+
+hr { opacity: 30%; margin-left:30px;}
+
+.see-more {
+	background-color:#0899D4;
+	color: white;
+	border: none;
+	padding:10px;
+	display: block;
+	margin:0 auto;
+	border-radius: 5%;
+}
+
+.see-more:hover {
+	background-color: #0073FF;
+}
+
+.hiddencolumn {display:none;}
 
 /*donations*/
 .donations-header {
@@ -235,6 +401,7 @@ header {
 	
 	background-position: center;
 	background-size: cover;
+	
 }
 
 .inside-donate {
@@ -246,8 +413,7 @@ header {
 	background-color: #FFFFFF;
 	border-radius: 10%;
 	border: 1px solid #E5EEF6;
-	
-	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btns {
@@ -290,13 +456,20 @@ header {
 	margin: 0 auto;
 	width:200px;
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 10px;}
+
+.submit img {
+	width:90px;
+	display: block;
+	margin: 0 auto;
+	
+}
+
 
 /*footer*/
-footer {
-	background-image: url("images/footer.jpg");
-	height:500px;
-}
+	footer { background-image: url("images/footer.jpg");
+	height:500px;}
+	
 .wavebot {
 	margin-top:-11px;
 	border: none;
@@ -343,18 +516,94 @@ footer {
 		font-size: 200%;
 	}
 	
+	/*home*/
 	
+	.icons {
+		
+	}
 	
+	.facts {
+		width:100%;
+		margin-top: 50px;
+		align-items: center;
+	}
+	
+	.donate h3 {
+		margin-right: 250px;
+	}
+	
+	.ourwork {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.ourwork h2 {
+		font-size:150%;
+		margin-left:60px;
+		padding-top: 300px;
+	}
+	.ourwork h2:hover {
+		color:#0899D4;
+	}
+	
+	.documentary, .visual-designs, .global-issues {
+		height:400px;
+		width:33.3%;
+	}
+	
+	.camp {
+		width:33.3%;
+		align-items: center;
+	}
+	
+	.campaigns {
+		margin-bottom: 360px;
+	}
+	
+	.wavebot {
+		margin-top: -15px;
+	}
+	
+	.medialogo {
+		width:50px;
+		padding: 0px 30px;
+	}
+	
+	/*donations*/
+	
+	.donate-options {
+		width:80%;
+		display: block;
+		margin: auto;
+		padding:50px 0px;
+	}
+	
+	.donate-options figure {
+		padding:30px 0px;
+	}
+	.donateheader h3 {padding:0px 80px}
+	
+	.donate-square {
+		margin-top: -300px;
+	}
 	/*blog*/
-	.row {
-	display:flex;
-}
+	.second h3 {padding-top:30px;}
 
-	.column {
-	flex: 50%;
- 	padding: 10px;
-}
-
+	/*about*/
+	.workexamples {
+		margin-top:-200px;
+	}
+	.about-row {margin-bottom: 250px;}
+	 .about-column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+	.CEO {padding:100px;}
+	.ceo-pic {margin-right:30px;}
+	.ceo-bio {margin-top:20px}
+	
+	.title {margin-bottom: -50px;}
 	
 	@media (min-width:900px) {
 		ul.nav-links {
@@ -365,6 +614,66 @@ footer {
 			padding:40px;
 	}
 		ul.nav-links a {
-		font-size: 100%;
+			font-size: 100%;}
 		
-	} /*end of media 
+		.hiddable {
+		display:block;
+		}
+		.wavebot {margin-top:-50px}
+		.medialogo {padding: 0px 10px;}
+		.subscribe {margin-top: -80px;}
+		.social {margin-bottom: -10px;;margin-top: 50px}
+		.footer {height:600px;}
+		
+	/*home*/
+		.info h3 {padding:0 200px;text-align: center;}
+		.facts {width:75%;margin: 0 auto;}
+		.documentary, .visual-designs, .global-issues {height:600px;}
+		.ourwork {justify-content: center;}
+		.ourwork h2 {margin-top: 100px;margin-left: 30px;margin-bottom: -15px;}
+		.ourwork h3 {padding:30px;font-family: 'Lato', sans-serif;color: aliceblue;font-weight: 100;padding-top: 5px;}
+		.campimg {width:250px;display: block; margin: 0 auto;}
+		.camp figure {text-align: center;}
+		.campaigns {margin-bottom: 650px;}
+		.campaigns h1 {margin-bottom: 100px;}
+		.donate h3 {padding-right:400px;}
+		
+		
+	/*about*/
+		.CEO {padding:none;display:flex;justify-content: center}
+		.ceo {width:300px;height:300px}
+		.ceo-bio {width:400px}
+		.the-team {padding: 0 100px; display: block;margin: 0 auto;margin-top: 60px;}
+	/*donations*/
+		.donateheader h3 {padding:0 200px;text-align: center;}
+		.donate-options {
+		display: flex;
+		justify-content: center;
+	}
+	.donate-options figure {
+		margin-inline-end: 0;
+		margin-inline-start: 0;
+		padding:10px;
+		width:100%}
+		.donate-square {
+			height:800px
+		}
+		.donbtn {border:none;background-color: #40BCFF;color: aliceblue;font-family: 'Maven Pro', sans-serif;float: right;border-radius: 10% 0 0 10%; padding: 10px;margin-top: -60px}
+		.donbtn:hover {background-color: #0899D4}
+	/*blog*/
+		.row {
+		display:flex;
+}
+
+		.column {
+		flex: 50%;
+ 		padding: 10px;}
+		.small-text {width:80%;font-size: 80%}
+		.hiddable img{width:100px;height:100px;border-radius: 50%;float:right;margin-top:-110px;}
+		.see-more {margin-top:70px;}
+		.blog-pic, .featured-blog {width:80%;display:block;margin: 0 auto}
+		
+		.featured-blog h2 {padding: 0 30px 0 10px;font-size: 240%;margin-top:-200px}
+		.second {margin-top:40px}
+		
+	}} /*end of media 

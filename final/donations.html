@@ -6,6 +6,7 @@
 	<link href="main.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 
 <body>
@@ -31,8 +32,6 @@
 								</div>
 	</header>
 	
-	
-	
 	<div class="separator">
 		<img class="wave" src="images/wave.png" alt="wave">
 		</div>
@@ -44,9 +43,9 @@
 	</div>
 	
 	<div class="donate-options">
-			<figure><img class="don-op" src="images/firstdonation.png" alt="circle"><figcaption class="donate-info"><h2>$35</h2></br><h3>This donation will help support our state outreach to secure a ban on the trade in shark fins throughout the United States. It might even help cover the cost of a shark costume for one of our public rallies or demonstrations!</h3></figcaption></figure>
-			<figure><img class="don-op" src="images/seconddonation.png" alt="circle"><figcaption class="donate-info"><h2>$75</h2></br><h3>This donation enables OPS to continue our ‘SKYPE in the Classroom’ outreach program where we can reach thousands of school children every year to raise awareness and inspire action.</h3></figcaption></figure>
-			<figure><img class="don-op" src="images/thirddonation.png" alt="circle"><figcaption class="donate-info"><h2>$150</h2></br><h3>This donation will help equip OPS undercover operations with high-tech equipment required to bring never-before-seen footage about species extinction and other environmental crimes to the public.</h3></figcaption></figure>
+			<figure><img class="don-op" src="images/firstdonation.png" alt="circle"><figcaption class="donate-info"><h2>$35</h2><button class="donbtn">Donate ›</button></br><h3>This donation will help support our state outreach to secure a ban on the trade in shark fins throughout the United States. It might even help cover the cost of a shark costume for one of our public rallies or demonstrations!</h3></figcaption></figure>
+			<figure class="donate2"><img class="don-op" src="images/seconddonation.png" alt="circle"><figcaption class="donate-info"><h2>$75</h2><button class="donbtn">Donate ›</button></br><h3>This donation enables OPS to continue our ‘SKYPE in the Classroom’ outreach program where we can reach thousands of school children every year to raise awareness and inspire action.</h3></figcaption></figure>
+			<figure><img class="don-op" src="images/thirddonation.png" alt="circle"><figcaption class="donate-info"><h2>$150</h2><button class="donbtn">Donate ›</button></br><h3>This donation will help equip OPS undercover operations with high-tech equipment required to bring never-before-seen footage about species extinction and other environmental crimes to the public.</h3></figcaption></figure>
 		</div>
 	
 	
@@ -71,18 +70,43 @@
 			  				  <input type="radio" value="paypal" id="paypal" class="check">Paypal</label>
 			</fieldset>
 		
+		<div class="submit">
+				<a href="images/thankyou.png" data-fancybox="gallery">
+					<img src="images/submitbtn.png">
+			</a>
 		</div>
 	
 	</div>
 	
+</div>
 	
 	
 	
 	
 	
+	<footer>
+	<div class="bottom-separator">
+		<img class="wavebot" src="images/wavebw.png" alt="wavebot">
+		</div>
 	
-	
+		<div class="subscribe">
+			<img src="images/email.png">
+				<fieldset class="enteremail">
+						<label for="email"></label>
+     			 <input name="email" type="text" required="required" id="email" placeholder="Email Address" class="fillin">
+			</fieldset>
+			<button class="sub">Subscribe</button>
+		</div>
+		
+		<div class="social">
+			<img src="images/facebook.png" class="medialogo">
+			<img src="images/instagram.png" class="medialogo">
+			<img src="images/youtube.png" class="medialogo">
+		</div>
+	</footer>
 	
 	<script src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>

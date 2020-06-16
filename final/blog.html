@@ -6,6 +6,8 @@
 	<link href="main.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -37,55 +39,134 @@
 	
 <div class="row">
 	<div class="column">
+		<div class="blog-title"><h1>Featured</h1></div>
 					<div class="blog-pic">
 						<img src="images/blog1.png">
 					</div>
 		<div class="featured-blog">
 			<h2>The Leuser Ecosystem: At the frontlines of extinction</h2>
 			<h3>You have likely heard of the Amazon or the Congo, but the lesser-known Leuser Ecosystem on the island of Sumatra, Indonesia, is just as biologically diverse, just as important to the continued survival of species, and just as important for our global climate.</h3>
+			<h4>Read more ›</h4>
 		</div>
 		
 					<div class="blog-pic">
 						<img src="images/blog2.png">
 					</div>
-		<div class="featured-blog">
+		<div class="featured-blog second">
 			<h2>The COVID-19 Pandemic and Wildlife Trade</h2>
 			<h3>We now know that COVID-19, the disease caused by the novel coronavirus that is causing tens of thousands to become ill or lose their lives, is spreading because of our collective exploitation of wildlife. Researchers and health authorities have linked the origins of the virus to the live food markets in China where wildlife is transported, caged in appalling conditions, , and slaughtered in front of paying customers.</h3>
+			<h4>Read more ›</h4>
 		</div>
 	</div>
 	
 	<div class="column">
+		<div class="blog-title"><h1>More Blogs</h1></div>
 		<div class="small-blog">
-			<div class="small-text"> </div>
-			<div class="image"><img src=""></div>
+			<div class="small-text">
+				<h2> Standing in solidarity with Black Lives Matter</h2>
+					<h3>Like many organizations, we are striving to find the words and actions to best express our support f...</h3>			
+			</div>
+			<div class="image hiddable"><img src="images/blog3.png"></div>
+		</div>
+		<hr>
+		<div class="small-blog">
+			<div class="small-text">
+				<h2>An Update on Lamakera</h2>
+					<h3>In recent decades, there has been an increasing demand for manta ray gill plates in Chinese medicine...</h3>
+			</div>
+			<div class="image hiddable"><img src="images/blog4.png"></div>
+		</div>
+		<hr>
+		<div class="small-blog">
+			<div class="small-text">
+			<h2>The Leuser Ecosystem: At the frontlines of extinction</h2>
+					<h3>This blog comes to us from Heather Rally, a wildlife veterinarian who worked on the covert operation...</h3></div>
+			<div class="image hiddable"><img src="images/blog5.png"></div>
+		</div>
+		<hr>
+		<div class="small-blog">
+			<div class="small-text">
+			<h2>New Video Calls for Urgent Action to End Conflict Palm Oil</h2>
+					<h3>On the heels of the recent release of the highly acclaimed major film RACING EXTINCTION th...</h3></div>
+			<div class="image hiddable"><img src="images/blog6.png"></div>
+		</div>
+		<hr>
+		<div class="small-blog">
+			<div class="small-text">
+			<h2>Half of the Earth’s Species May Disappear in 100 Years</h2>
+					<h3>HALF of Earth’s species may disappear in 100 yrs. Watch #RacingExtinction tonight on Discovery am...</h3></div>
+			<div class="image hiddable"><img src="images/blog7.png"></div>
 		</div>
 		
+		<button id="show" class="see-more">See More</button>
+		<div class="hiddencolumn">
 		<div class="small-blog">
-			<div class="small-text"> </div>
-			<div class="image"><img src=""></div>
+			<div class="small-text">
+				<h2> Standing in solidarity with Black Lives Matter</h2>
+					<h3>Like many organizations, we are striving to find the words and actions to best express our support f...</h3>			
+			</div>
+			<div class="image hiddable"><img src="images/blog3.png"></div>
 		</div>
-		
+		<hr>
 		<div class="small-blog">
-			<div class="small-text"> </div>
-			<div class="image"><img src=""></div>
+			<div class="small-text">
+				<h2>An Update on Lamakera</h2>
+					<h3>In recent decades, there has been an increasing demand for manta ray gill plates in Chinese medicine...</h3>
+			</div>
+			<div class="image hiddable"><img src="images/blog4.png"></div>
 		</div>
-		
+		<hr>
 		<div class="small-blog">
-			<div class="small-text"> </div>
-			<div class="image"><img src=""></div>
+			<div class="small-text">
+			<h2>The Leuser Ecosystem: At the frontlines of extinction</h2>
+					<h3>This blog comes to us from Heather Rally, a wildlife veterinarian who worked on the covert operation...</h3></div>
+			<div class="image hiddable"><img src="images/blog5.png"></div>
 		</div>
-		
+		<hr>
 		<div class="small-blog">
-			<div class="small-text"> </div>
-			<div class="image"><img src=""></div>
+			<div class="small-text">
+			<h2>New Video Calls for Urgent Action to End Conflict Palm Oil</h2>
+					<h3>On the heels of the recent release of the highly acclaimed major film RACING EXTINCTION th...</h3></div>
+			<div class="image hiddable"><img src="images/blog6.png"></div>
+		</div>
+		<hr>
+		<div class="small-blog">
+			<div class="small-text">
+			<h2>Half of the Earth’s Species May Disappear in 100 Years</h2>
+					<h3>HALF of Earth’s species may disappear in 100 yrs. Watch #RacingExtinction tonight on Discovery am...</h3></div>
+			<div class="image hiddable"><img src="images/blog7.png"></div>
 		</div>
 		
 	</div>
+	</div>
+	
+	
 	
 </div>	
 	
+	<footer>
+	<div class="bottom-separator">
+		<img class="wavebot" src="images/wavebw.png" alt="wavebot">
+		</div>
 	
+		<div class="subscribe">
+			<img src="images/email.png">
+				<fieldset class="enteremail">
+						<label for="email"></label>
+     			 <input name="email" type="text" required="required" id="email" placeholder="Email Address" class="fillin">
+			</fieldset>
+			<button class="sub">Subscribe</button>
+		</div>
+		
+		<div class="social">
+			<img src="images/facebook.png" class="medialogo">
+			<img src="images/instagram.png" class="medialogo">
+			<img src="images/youtube.png" class="medialogo">
+		</div>
+	</footer>
 	
 	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
